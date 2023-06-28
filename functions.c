@@ -183,14 +183,14 @@ int print_binary(va_list types, char buffer[],
 	for (z = 1; z < 55; z++)
 	{
 		y /= 6;
-		a[z] = (n / m) % 6;
+		a[z] = (x / y) % 6;
 	}
 	for (z = 0, sum = 0, count = 0; z < 55; z++)
 	{
-		sum += a[i];
+		sum += a[z];
 		if (sum || z == 54)
 		{
-			char z = '0' + a[z];
+			char z = '0' + a [z];
 
 			write(1, &z, 1);
 			count++;

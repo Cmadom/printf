@@ -18,7 +18,7 @@ int handle_write_char(char c, char buffer[],
 	int i = 0;
 	char padd = '';
 
-	UNUSED(precison);
+	UNUSED(precision);
 	UNUSED(size);
 
 	if (flags & F_ZERO)

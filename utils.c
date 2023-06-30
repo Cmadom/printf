@@ -45,6 +45,7 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
  *
  * Return: 1 if c is a digit, 0 otherwise
  */
+
 int is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
@@ -60,6 +61,7 @@ int is_digit(char c)
  *
  * Return: casted value of num
  */
+
 long int convert_size_number(long int num, int size)
 {
 	if (size == S_LONG)

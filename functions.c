@@ -190,7 +190,7 @@ int print_binary(va_list types, char buffer[],
 		sum += a[i];
 		if (sum || i == 31)
 		{
-			char z = '0' + a[i];
+			int z = '0' + a[i];
 
 			write(1, &z, 1);
 			count++;
